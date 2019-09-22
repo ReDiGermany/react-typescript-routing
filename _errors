@@ -1,0 +1,51 @@
+ERROR in ./node_modules/prop-types/index.js
+Module not found: Error: Can't resolve './factoryWithTypeCheckers' in '{folder}\node_modules\prop-types'
+ @ ./node_modules/prop-types/index.js 14:19-55
+ @ ./node_modules/react-router-dom/esm/react-router-dom.js
+ @ ./src/index.tsx
+
+ERROR in ./node_modules/history/esm/history.js
+Module not found: Error: Can't resolve '@babel/runtime/helpers/esm/extends' in '{folder}\node_modules\history\esm'
+ @ ./node_modules/history/esm/history.js 1:0-58 65:15-23 285:4-12 558:4-12 800:4-12
+ @ ./node_modules/react-router-dom/esm/react-router-dom.js
+ @ ./src/index.tsx
+
+ERROR in ./node_modules/react-router-dom/esm/react-router-dom.js
+Module not found: Error: Can't resolve '@babel/runtime/helpers/esm/extends' in '{folder}\node_modules\react-router-dom\esm'
+ @ ./node_modules/react-router-dom/esm/react-router-dom.js 8:0-58 157:38-46 226:27-35 227:37-45 238:22-30
+ @ ./src/index.tsx
+
+ERROR in ./node_modules/react-router/esm/react-router.js
+Module not found: Error: Can't resolve '@babel/runtime/helpers/esm/extends' in '{folder}\node_modules\react-router\esm'
+ @ ./node_modules/react-router/esm/react-router.js 9:0-58 280:116-124 297:45-53 421:18-26 492:9-17 501:9-17 595:39-47 646:54-62 686:44-52
+ @ ./node_modules/react-router-dom/esm/react-router-dom.js
+ @ ./src/index.tsx
+
+ERROR in ./node_modules/react-router-dom/esm/react-router-dom.js
+Module not found: Error: Can't resolve '@babel/runtime/helpers/esm/inheritsLoose' in '{folder}\node_modules\react-router-dom\esm'
+ @ ./node_modules/react-router-dom/esm/react-router-dom.js 1:0-70 19:2-16 66:2-16 116:2-16
+ @ ./src/index.tsx
+
+ERROR in ./node_modules/react-router/esm/react-router.js
+Module not found: Error: Can't resolve '@babel/runtime/helpers/esm/inheritsLoose' in '{folder}\node_modules\react-router\esm'
+ @ ./node_modules/react-router/esm/react-router.js 2:0-70 33:2-16 124:2-16 167:2-16 404:2-16 528:2-16 623:2-16
+ @ ./node_modules/react-router-dom/esm/react-router-dom.js
+ @ ./src/index.tsx
+
+ERROR in ./node_modules/react-router-dom/esm/react-router-dom.js
+Module not found: Error: Can't resolve '@babel/runtime/helpers/esm/objectWithoutPropertiesLoose' in '{folder}\node_modules\react-router-dom\esm'
+ @ ./node_modules/react-router-dom/esm/react-router-dom.js 9:0-100 150:15-44 211:13-42
+ @ ./src/index.tsx
+
+ERROR in ./node_modules/react-router/esm/react-router.js
+Module not found: Error: Can't resolve '@babel/runtime/helpers/esm/objectWithoutPropertiesLoose' in '{folder}\node_modules\react-router\esm'
+ @ ./node_modules/react-router/esm/react-router.js 11:0-100 579:15-44 682:25-54
+ @ ./node_modules/react-router-dom/esm/react-router-dom.js
+ @ ./src/index.tsx
+
+ERROR in ./node_modules/mini-create-react-context/dist/esm/index.js
+Module not found: Error: Can't resolve '@babel/runtime/helpers/inheritsLoose' in '{folder}\node_modules\mini-create-react-context\dist\esm'
+ @ ./node_modules/mini-create-react-context/dist/esm/index.js 2:0-66 52:4-18 106:4-18
+ @ ./node_modules/react-router/esm/react-router.js
+ @ ./node_modules/react-router-dom/esm/react-router-dom.js
+ @ ./src/index.tsx
