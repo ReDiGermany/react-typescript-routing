@@ -1,3 +1,5 @@
 #Working Routing example
-`npm run dev`\
+
+Using `npm i`\
+Using `npm run dev`\
 maybe change url's
