@@ -1,0 +1,31 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.tsx",
+  "scripts": {
+    "dev": "webpack --watch --info-verbosity verbose",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/history": "^4.7.3",
+    "@types/node": "^12.7.5",
+    "@types/react-router-dom": "^4.3.5",
+    "history": "^4.10.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "react-subpage": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^6.1.0",
+    "typescript": "^3.6.3",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
+  }
+}
