@@ -1,80 +1,67 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 
-function BasicExample() {
-  return (
-    <BrowserRouter>
+class App extends React.Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/stuff">Stuff</Link>
+            </li>
+          </ul>
+
+          <hr />
+
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route component={NoMatch} />
+          </Switch>
+        </div>
+      </BrowserRouter>
+    );
+  }
+}
+
+class NoMatch extends React.Component {
+  render() {
+    console.log(location.pathname);
+    return (
       <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/topics">Topics</Link>
-          </li>
-        </ul>
-
-        <hr />
-
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/topics" component={Topics} />
+        <h3>
+          No match for <code>{location.pathname}</code>
+        </h3>
       </div>
-    </BrowserRouter>
-  );
+    );
+  }
 }
 
-function Home() {
-  return (
-    <div>
-      <h2>Home</h2>
-    </div>
-  );
+class Home extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>Home</h2>
+      </div>
+    );
+  }
+}
+class About extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>About</h2>
+      </div>
+    );
+  }
 }
 
-function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-}
-
-function Topics(match: any) {
-  return (
-    <div>
-      <h2>Topics</h2>
-      <ul>
-        <li>
-          <Link to={`${match.url}/rendering`}>Rendering with React</Link>
-        </li>
-        <li>
-          <Link to={`${match.url}/components`}>Components</Link>
-        </li>
-        <li>
-          <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
-        </li>
-      </ul>
-
-      <Route path={`${match.path}/:topicId`} component={Topic} />
-      <Route
-        exact
-        path={match.path}
-        render={() => <h3>Please select a topic.</h3>}
-      />
-    </div>
-  );
-}
-
-function Topic(match: any) {
-  return (
-    <div>
-      <h3>{match.params.topicId}</h3>
-    </div>
-  );
-}
-ReactDOM.render(<BasicExample />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
